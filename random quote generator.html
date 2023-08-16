@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/b6a2ea429f.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="random quote generator.css" rel="stylesheet">
+</head>
+
+<body>
+  <script>
+    function generate()
+    {
+      var quotes = [
+        "It is often the small steps, not the giant leaps that bring about the most lasting change",
+        "There is always light If only we're brave enough to see it. If only we're brave enough to be it",
+        "I have learned not to allow rejection to move me", "You are much more than a collection of cells, you just need to prove it to yourself first"
+      ];
+      var num = Math.floor(Math.random() * quotes.length);
+      document.getElementById("display").innerHTML = quotes[num];
+    }
+  </script>
+  <div id="box">
+  <form align="center">
+    <input type="button" value="Get inspired!" onclick="generate()">
+    <br>
+    <br>
+    <i class="fa-solid fa-quote-left"></i>
+    <div id="display">
+    </div>
+    <i class="fa-solid fa-quote-right"></i>
+  </form>
+  </div>
+</body>
+
+</html>
